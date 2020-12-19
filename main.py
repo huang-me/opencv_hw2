@@ -14,10 +14,15 @@ class window(QMainWindow, ui):
 		super().__init__()
 		self.setupUi(self)
 		self.BTN_2_1.clicked.connect(self.btn2_1)
+		self.BTN_2_2.clicked.connect(self.btn2_2)
 	
 	def btn2_1(self):
 		from block2 import btn2_1
 		btn2_1()
+	
+	def btn2_2(self):
+		from block2 import btn2_2
+		btn2_2()
 
 if __name__ == '__main__':
 	app = QApplication(sys.argv)
