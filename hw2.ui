@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QDialog" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="group1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>400</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>1. Background Subtraction</string>
+   </property>
+   <widget class="QPushButton" name="BTN_1">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>340</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1.1 Background Subtraction</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="group2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>400</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>2. Optical Flow</string>
+   </property>
+   <widget class="QPushButton" name="BTN_2_1">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>340</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2.1 Preprocessing</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BTN_2_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>340</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2.2 Video Tracking</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="group3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>230</y>
+     <width>400</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>3. Perspective Transform</string>
+   </property>
+   <widget class="QPushButton" name="BTN_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>340</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3.1 Perspective Transform</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="group4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>310</y>
+     <width>400</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>4. PCA</string>
+   </property>
+   <widget class="QPushButton" name="BTN_4_1">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>340</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>4.1 Image Reconstruction</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BTN_4_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>340</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>4.2 Compute the Reconstruction Error</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="group5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>430</y>
+     <width>400</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>5. Dogs and Cats classifacation using ResNet50</string>
+   </property>
+   <widget class="QPushButton" name="BTN_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>340</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5.1 Dogs and Cats classification</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
