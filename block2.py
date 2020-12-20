@@ -39,9 +39,7 @@ def btn2_1():
 							(round(keypoints[i].pt[0] + 5.5), round(keypoints[i].pt[1])), 
 							(0, 0, 255), 
 							1)
-	plt.ion()
-	plt.imshow(image)
-	plt.show()
+	cv.imshow('preprocess', image)
 
 def btn2_2():
 	cap = cv.VideoCapture('Q2_Image/opticalFlow.mp4')
@@ -95,9 +93,8 @@ def btn2_2():
 			mask = cv.line(mask, (a, b), (c, d), (0, 0, 255), 2)
 			frame = cv.circle(frame, (a, b), 5, (0, 0, 255), -1)
 		img = cv.add(frame, mask)
-		w.set_data(img)
-		plt.show()
-		plt.pause(.001)
+		cv.imshow('video tracking', img)
+		cv.waitKey(1)
 		# Now update the previous frame and previous points
 		last_gray = gray.copy()
 		p0 = good_new.reshape(-1, 1, 2)
