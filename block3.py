@@ -4,6 +4,8 @@ import numpy as np
 def btn3():
 	cap = cv.VideoCapture('Q3_Image/test4perspective.mp4')
 	im_src = cv.imread('Q3_Image/rl.jpg')
+	fourcc = cv.VideoWriter_fourcc(*'mp4v')
+	out = cv.VideoWriter('Perspective_transform.mp4', fourcc, 20.0, (1280, 720))
 
 	white = np.zeros((2068, 3575, 3), np.uint8)
 	white[:, :, 0] = np.zeros((2068, 3575)) + 255
@@ -57,7 +59,8 @@ def btn3():
 			frame = cv.bitwise_and(frame, mask)
 			dst = cv.bitwise_or(frame, dst)
 
-			cv.imshow('result', dst)
+			cv.imshow('Perspective Transform', dst)
+			out.write(dst)
 			if cv.waitKey(1) == ord('q'):
 				break
 
@@ -69,4 +72,5 @@ def btn3():
 			break
 
 	cap.release()
+	out.release()
 	cv.destroyAllWindows()
