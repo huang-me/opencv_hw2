@@ -16,6 +16,8 @@ class window(QMainWindow, ui):
 		self.BTN_2_1.clicked.connect(self.btn2_1)
 		self.BTN_2_2.clicked.connect(self.btn2_2)
 		self.BTN_3.clicked.connect(self.btn3)
+		self.BTN_4_1.clicked.connect(self.btn4_1)
+		self.BTN_4_2.clicked.connect(self.btn4_2)
 	
 	def btn2_1(self):
 		from block2 import btn2_1
@@ -28,6 +30,14 @@ class window(QMainWindow, ui):
 	def btn3(self):
 		from block3 import btn3
 		btn3()
+
+	def btn4_1(self):
+		from block4 import btn4_1
+		btn4_1()
+
+	def btn4_2(self):
+		from block4 import btn4_2
+		btn4_2()
 
 if __name__ == '__main__':
 	app = QApplication(sys.argv)
